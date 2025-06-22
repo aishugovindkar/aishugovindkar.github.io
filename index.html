@@ -1,7 +1,32 @@
-echo "# aishugovindkar.github.io" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/aishugovindkarpro8/aishugovindkar.github.io.git
-git push -u origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aishwarya's DevOps Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 0; margin: 0; }
+    header { background: #232f3e; color: white; text-align: center; padding: 30px 10px; }
+    .project { background: white; margin: 30px auto; padding: 20px; border-radius: 8px; max-width: 800px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { color: #232f3e; }
+    a { color: #007acc; text-decoration: none; font-weight: bold; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aishwarya Govindkar - DevOps Portfolio</h1>
+    <p>CI/CD | Azure | GCP | Docker | Terraform | Jenkins | Kubernetes</p>
+  </header>
+  <section class="project">
+    <h2>🔧 Jenkins Azure CI/CD Project</h2>
+    <p>Dockerized Flask app deployed to Azure VM via Jenkins pipeline.</p>
+    <ul>
+      <li>CI: Jenkins builds Docker image, pushes to ACR</li>
+      <li>CD: Jenkins deploys Docker container on Azure VM</li>
+      <li>Tools: Jenkins, Docker, ACR, Azure VM, Python</li>
+    </ul>
+    <a href="https://github.com/aishugovindkarpro8/Jenkins-azure-repo" target="_blank">📂 View Project on GitHub</a>
+  </section>
+</body>
+</html>
