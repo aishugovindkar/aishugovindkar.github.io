@@ -2,24 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aishwarya's DevOps Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aishwarya Govindkar | DevOps Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Aishwarya Govindkar - DevOps Portfolio</h1>
-    <p>CI/CD | Azure | GCP | Docker | Terraform | Jenkins | Kubernetes</p>
+    <h1>Aishwarya Govindkar</h1>
+    <p>DevOps Engineer | Cloud | Automation | Monitoring Enthusiast</p>
   </header>
-  <section class="project">
-    <h2>🔧 Jenkins Azure CI/CD Project</h2>
-    <p>Dockerized Flask app deployed to Azure VM via Jenkins pipeline.</p>
-    <ul>
-      <li>CI: Jenkins builds Docker image, pushes to ACR</li>
-      <li>CD: Jenkins deploys Docker container on Azure VM</li>
-      <li>Tools: Jenkins, Docker, ACR, Azure VM, Python</li>
-    </ul>
-    <a href="https://github.com/aishugovindkarpro8/Jenkins-azure-repo" target="_blank">📂 View Project on GitHub</a>
-  </section>
+
+  <main>
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>Monitoring Stack for Flask App</h3>
+        <p>
+          A complete monitoring and observability project using <strong>Prometheus, Grafana, ELK Stack</strong>, and <strong>Filebeat</strong> for a containerized Flask web app.
+        </p>
+        <ul>
+          <li><strong>Metrics:</strong> Exported via Prometheus + Node Exporter</li>
+          <li><strong>Logs:</strong> Structured logging via Filebeat → Logstash → Elasticsearch → Kibana</li>
+          <li><strong>Dashboards:</strong> Real-time metrics in Grafana and heatmaps in Kibana</li>
+        </ul>
+        <a href="https://github.com/aishugovindkarpro8/monitoring-stack-project" target="_blank" class="btn">🔗 View on GitHub</a>
+      </div>
+
+      <!-- Add more projects below as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aishwarya Govindkar · Built with 💙</p>
+  </footer>
 </body>
 </html>
