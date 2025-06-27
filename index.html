@@ -9,13 +9,14 @@
 <body>
   <header>
     <h1>Aishwarya Govindkar</h1>
-    <p>DevOps Engineer | Cloud | Automation | Monitoring Enthusiast</p>
+    <p>DevOps Engineer | CI/CD Automation | Cloud Infrastructure | Docker · Kubernetes · Terraform</p>
   </header>
 
   <main>
     <section id="projects">
       <h2>Projects</h2>
 
+      <!-- Project 1 -->
       <div class="project-card">
         <div class="project-content">
           <div class="project-text">
@@ -32,12 +33,12 @@
             <a href="https://github.com/aishugovindkar/monitoring-stack" target="_blank" class="btn">🔗 View on GitHub</a>
           </div>
           <div class="project-image-box">
-            <a href="https://raw.githubusercontent.com/aishugovindkar/monitoring-stack/main/flask-monitoring-app/Flowchart%20-%20Page%202.png" target="_blank">
-              <img class="project-image" src="https://raw.githubusercontent.com/aishugovindkar/monitoring-stack/main/flask-monitoring-app/Flowchart%20-%20Page%202.png" alt="Monitoring Architecture">
+            <img class="project-image" src="https://raw.githubusercontent.com/aishugovindkar/monitoring-stack/main/flask-monitoring-app/Flowchart%20-%20Page%202.png" alt="Monitoring Architecture" onclick="openModal(this.src)">
           </div>
         </div>
       </div>
 
+      <!-- Project 2 -->
       <div class="project-card">
         <div class="project-content">
           <div class="project-text">
@@ -54,17 +55,31 @@
             <a href="https://github.com/aishugovindkar/aws-ansible-fastapi-cicd-vault" target="_blank" class="btn">🔗 View on GitHub</a>
           </div>
           <div class="project-image-box">
-            <a href="https://raw.githubusercontent.com/aishugovindkar/aws-ansible-fastapi-cicd-vault/main/AWS-%20Ansible%20Project.png" target="_blank">
-              <img class="project-image" src="https://raw.githubusercontent.com/aishugovindkar/aws-ansible-fastapi-cicd-vault/main/AWS-%20Ansible%20Project.png" alt="AWS Ansible Architecture">
+            <img class="project-image" src="https://raw.githubusercontent.com/aishugovindkar/aws-ansible-fastapi-cicd-vault/main/AWS-%20Ansible%20Project.png" alt="FastAPI Architecture" onclick="openModal(this.src)">
           </div>
         </div>
       </div>
-
     </section>
   </main>
+
+  <!-- Lightbox Modal -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="modal-close" onclick="closeModal()">×</span>
+    <img class="modal-content" id="modalImage" />
+  </div>
 
   <footer>
     <p>&copy; 2025 Aishwarya Govindkar · Built with 💙</p>
   </footer>
+
+  <script>
+    function openModal(src) {
+      document.getElementById("modalImage").src = src;
+      document.getElementById("imageModal").style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
 </body>
 </html>
