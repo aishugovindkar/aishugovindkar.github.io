@@ -17,31 +17,41 @@
       <h2>Projects</h2>
 
       <div class="project-card">
-        <h3>Monitoring Stack for Flask App</h3>
-        <p class="summary">
-          End-to-end monitoring setup for a containerized Flask app with metrics, logging, and visualization.  
-          Built using Prometheus, Grafana, Filebeat, ELK Stack and deployed with Docker Compose.
-        </p>
-        <ul>
-          <li><strong>Metrics:</strong> Exported via Prometheus + Node Exporter</li>
-          <li><strong>Logs:</strong> Filebeat → Logstash → Elasticsearch → Kibana</li>
-          <li><strong>Dashboards:</strong> Real-time system metrics & heatmaps</li>
-        </ul>
-        <a href="https://github.com/aishugovindkar/monitoring-stack" target="_blank" class="btn">🔗 View on GitHub</a>
+        <div class="project-content">
+          <div class="project-text">
+            <h3>Monitoring Stack for Flask App</h3>
+            <p class="summary">
+              End-to-end monitoring setup for a containerized Flask app with metrics, logging, and visualization.  
+              Built using Prometheus, Grafana, Filebeat, ELK Stack and deployed with Docker Compose.
+            </p>
+            <ul>
+              <li><strong>Metrics:</strong> Exported via Prometheus + Node Exporter</li>
+              <li><strong>Logs:</strong> Filebeat → Logstash → Elasticsearch → Kibana</li>
+              <li><strong>Dashboards:</strong> Real-time system metrics & heatmaps</li>
+            </ul>
+            <a href="https://github.com/aishugovindkar/monitoring-stack" target="_blank" class="btn">🔗 View on GitHub</a>
+          </div>
+          <img class="project-image" src="https://raw.githubusercontent.com/aishugovindkar/monitoring-stack/main/flask-monitoring-app/Flowchart%20-%20Page%202.png" alt="Monitoring Architecture Diagram">
+        </div>
       </div>
 
       <div class="project-card">
-        <h3>FastAPI Deployment with AWS, Ansible, Vault & CI/CD</h3>
-        <p class="summary">
-          Automated FastAPI app deployment to AWS EC2 using GitHub Actions and Ansible.  
-          Integrated Vault to securely inject secrets into the containerized application.
-        </p>
-        <ul>
-          <li><strong>CI/CD:</strong> GitHub Actions deploys code automatically on push</li>
-          <li><strong>Secrets:</strong> Retrieved securely using HashiCorp Vault inside container</li>
-          <li><strong>Infra-as-Code:</strong> Used Ansible to provision EC2 and Dockerize app</li>
-        </ul>
-        <a href="https://github.com/aishugovindkar/aws-ansible-fastapi-cicd-vault" target="_blank" class="btn">🔗 View on GitHub</a>
+        <div class="project-content">
+          <div class="project-text">
+            <h3>FastAPI Deployment with AWS, Ansible, Vault & CI/CD</h3>
+            <p class="summary">
+              Automated FastAPI app deployment to AWS EC2 using GitHub Actions and Ansible.  
+              Integrated Vault to securely inject secrets into the containerized application.
+            </p>
+            <ul>
+              <li><strong>CI/CD:</strong> GitHub Actions deploys code automatically on push</li>
+              <li><strong>Secrets:</strong> Retrieved securely using HashiCorp Vault inside container</li>
+              <li><strong>Infra-as-Code:</strong> Used Ansible to provision EC2 and Dockerize app</li>
+            </ul>
+            <a href="https://github.com/aishugovindkar/aws-ansible-fastapi-cicd-vault" target="_blank" class="btn">🔗 View on GitHub</a>
+          </div>
+          <img class="project-image" src="https://raw.githubusercontent.com/aishugovindkar/aws-ansible-fastapi-cicd-vault/main/AWS-%20Ansible%20Project.png" alt="AWS Ansible Architecture">
+        </div>
       </div>
 
     </section>
