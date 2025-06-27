@@ -50,6 +50,39 @@ h2 {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
+.project-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.project-image-box {
+  max-width: 280px;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fefefe;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.03);
+}
+
 .project-card h3 {
   color: #1a202c;
   margin-bottom: 0.5rem;
@@ -95,7 +128,7 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   body {
     padding: 1rem;
   }
@@ -115,40 +148,13 @@ footer {
   .btn {
     padding: 0.5rem 1rem;
   }
-}
-.project-content {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  flex-wrap: wrap; /* Makes it mobile-friendly */
-}
 
-.project-text {
-  flex: 1;
-  min-width: 250px;
-}
-
-.project-image {
-  max-width: 320px;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-}
-
-.project-image:hover {
-  transform: scale(1.03);
-}
-
-/* Optional: Better stacking on small screens */
-@media (max-width: 768px) {
   .project-content {
     flex-direction: column;
     align-items: center;
   }
 
-  .project-image {
+  .project-image-box {
     max-width: 100%;
     margin-top: 1rem;
   }
