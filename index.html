@@ -18,18 +18,32 @@
 
       <div class="project-card">
         <h3>Monitoring Stack for Flask App</h3>
-        <p>
-          A complete monitoring and observability project using <strong>Prometheus, Grafana, ELK Stack</strong>, and <strong>Filebeat</strong> for a containerized Flask web app.
+        <p class="summary">
+          End-to-end monitoring setup for a containerized Flask app with metrics, logging, and visualization.  
+          Built using Prometheus, Grafana, Filebeat, ELK Stack and deployed with Docker Compose.
         </p>
         <ul>
           <li><strong>Metrics:</strong> Exported via Prometheus + Node Exporter</li>
-          <li><strong>Logs:</strong> Structured logging via Filebeat → Logstash → Elasticsearch → Kibana</li>
-          <li><strong>Dashboards:</strong> Real-time metrics in Grafana and heatmaps in Kibana</li>
+          <li><strong>Logs:</strong> Filebeat → Logstash → Elasticsearch → Kibana</li>
+          <li><strong>Dashboards:</strong> Real-time system metrics & heatmaps</li>
         </ul>
         <a href="https://github.com/aishugovindkar/monitoring-stack" target="_blank" class="btn">🔗 View on GitHub</a>
       </div>
 
-      <!-- Add more projects below as needed -->
+      <div class="project-card">
+        <h3>FastAPI Deployment with AWS, Ansible, Vault & CI/CD</h3>
+        <p class="summary">
+          Automated FastAPI app deployment to AWS EC2 using GitHub Actions and Ansible.  
+          Integrated Vault to securely inject secrets into the containerized application.
+        </p>
+        <ul>
+          <li><strong>CI/CD:</strong> GitHub Actions deploys code automatically on push</li>
+          <li><strong>Secrets:</strong> Retrieved securely using HashiCorp Vault inside container</li>
+          <li><strong>Infra-as-Code:</strong> Used Ansible to provision EC2 and Dockerize app</li>
+        </ul>
+        <a href="https://github.com/aishugovindkar/aws-ansible-fastapi-cicd-vault" target="_blank" class="btn">🔗 View on GitHub</a>
+      </div>
+
     </section>
   </main>
 
