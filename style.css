@@ -10,6 +10,7 @@ body {
   background-color: #f5f7fa;
   color: #333;
   padding: 2rem;
+  line-height: 1.6;
 }
 
 header {
@@ -18,8 +19,9 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.8rem;
+  margin-bottom: 0.3rem;
+  color: #1a1a1a;
 }
 
 header p {
@@ -29,40 +31,45 @@ header p {
 
 h2 {
   margin-bottom: 2rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.5rem;
 }
 
 .project-card {
   background: #fff;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.8rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   margin-bottom: 2rem;
-  transition: transform 0.2s;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .project-card h3 {
   color: #1a202c;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 
-.project-card p {
-  margin-bottom: 1rem;
+.project-card .summary {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.2rem;
 }
 
 .project-card ul {
-  margin-left: 1.2rem;
+  margin-left: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .project-card li {
   line-height: 1.5;
+  font-size: 0.97rem;
 }
 
 .btn {
@@ -72,11 +79,12 @@ h2 {
   color: white;
   text-decoration: none;
   border-radius: 6px;
-  transition: background 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
   background: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
 }
 
 footer {
@@ -84,4 +92,27 @@ footer {
   margin-top: 4rem;
   font-size: 0.9rem;
   color: #777;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 1.2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
 }
